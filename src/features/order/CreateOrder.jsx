@@ -1,6 +1,5 @@
-import { useState } from "react";
 import Button from "../../ui/Button";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { Form, redirect, useActionData } from "react-router-dom";
 import { createOrder } from "../../services/apiRestaurant";
 
@@ -39,9 +38,9 @@ function CreateOrder() {
   console.log(data);
   // const [withPriority, setWithPriority] = useState(false);
   const cart = fakeCart;
-  const disptach = useDispatch();
+  // const disptach = useDispatch();
   const { username } = useSelector((state) => state.user);
-  const handleClear = () => {};
+  // const handleClear = () => {};
 
   return (
     <div className="px-4 py-6">
@@ -76,7 +75,7 @@ function CreateOrder() {
           </div>
         </div>
 
-        <div className=" flex gap-2 mb-4">
+        <div className=" mb-4 flex gap-2">
           <input
             type="checkbox"
             name="priority"

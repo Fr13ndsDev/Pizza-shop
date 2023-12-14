@@ -27,18 +27,17 @@ import EmptyCart from "./EmptyCart";
 function Cart() {
   const { username } = useSelector((state) => state.user);
   const { cart } = useSelector((state) => state.cart);
-  const distach = useDispatch();
+  const dispatch = useDispatch();
   // const cart = fakeCart;
 
   const handelClear = () => {
-    distach(clear());
+    dispatch(clear());
   };
 
-  {
-    if (cart.length == 0) {
-      return <EmptyCart />;
-    }
+  if (cart.length === 0) {
+    return <EmptyCart />;
   }
+
   return (
     <div>
       <LinkButton to="/menu">&larr; Back to menu</LinkButton>

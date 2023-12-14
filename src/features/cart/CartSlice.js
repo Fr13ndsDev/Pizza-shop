@@ -28,7 +28,7 @@ const cartSlice = createSlice({
         pizza.quantity--;
         pizza.totalPrice = pizza.quantity * pizza.unitPrice;
 
-        if (pizza.quantity == 0)
+        if (pizza.quantity === 0)
           cartSlice.caseReducers.deleteToCart(state, action);
       }
     },

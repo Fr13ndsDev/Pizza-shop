@@ -2,10 +2,10 @@ import { formatCurrency } from "../../utils/helpers";
 import DeleteItem from "./DeleteItem";
 
 function CartItem({ item }) {
-  const { pizzaId, name, quantity, totalPrice } = item;
+  const { name, quantity, totalPrice } = item;
 
   return (
-    <li className="flex justify-between items-center py-4">
+    <li className="flex items-center justify-between py-4">
       <p>
         {quantity}&times; {name}
       </p>

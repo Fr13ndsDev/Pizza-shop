@@ -26,7 +26,7 @@ function MenuItem({ pizza }) {
   return (
     <>
       <div className="mb-6">
-        <div class="max-w-sm overflow-hidden rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800 ">
+        <div class="max-w-sm overflow-hidden mx-auto rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800 ">
           <div className="w-full overflow-hidden xl:h-72">
             <img
               className={`w-full rounded-t-lg duration-300 ease-in-out hover:scale-110  ${
@@ -37,8 +37,8 @@ function MenuItem({ pizza }) {
             />
           </div>
           <div
-            class="flex flex-col justify-between px-5 py-3"
-            style={{ height: "190px" }}
+            class="flex flex-col justify-between px-5 py-3 "
+            style={{ height: "200px" }}
           >
             <div>
               <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
