@@ -8,8 +8,9 @@ module.exports = {
       colors:{
         pizza: '#FACC15'
       },
+      
       backgroundColor: {
-        pizza: '#FACC15'
+        basicColor: '#B72A23'
       }
     },
     fontFamily: {

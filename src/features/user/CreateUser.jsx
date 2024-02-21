@@ -29,7 +29,7 @@ function CreateUser() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <p className=" mb-4 text-lm text-stone-600  md:text-base">
+      <p className=" mb-4 text-lm text-white  md:text-base">
         👋 Welcome! Please start by telling us your name:
       </p>
 

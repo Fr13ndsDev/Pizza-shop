@@ -39,7 +39,7 @@ function Cart() {
   }
 
   return (
-    <div>
+    <div className="py-10 sm:px-[30px] md:px-[50px] xl:px-[70px]  ">
       <LinkButton to="/menu">&larr; Back to menu</LinkButton>
 
       <h2>Your cart, {username}</h2>

@@ -60,9 +60,9 @@ function Order() {
   const deliveryIn = calcMinutesLeft(estimatedDelivery);
 
   return (
-    <div className="px-4">
-      <div className="sm:flex items-center justify-between py-4">
-        <h2 className="order font-bold mb-3 sm:mb-0 ">#{order.id} status:</h2>
+    <div className="py-10 sm:px-[30px] md:px-[50px] xl:px-[70px]  ">
+      <div className="items-center justify-between py-4 sm:flex">
+        <h2 className="order mb-3 font-bold sm:mb-0 ">#{order.id} status:</h2>
 
         <div className="flex items-center justify-between gap-4">
           {priority && (
@@ -76,8 +76,8 @@ function Order() {
         </div>
       </div>
 
-      <div className="sm:flex items-center justify-between bg-stone-300 p-5">
-        <p className=" font-semibold mb-2">
+      <div className="items-center justify-between bg-stone-300 p-5 sm:flex">
+        <p className=" mb-2 font-semibold">
           {deliveryIn >= 0
             ? `Only ${calcMinutesLeft(estimatedDelivery)} minutes left 😃`
             : "Order should have arrived"}

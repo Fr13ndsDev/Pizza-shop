@@ -43,7 +43,7 @@ function CreateOrder() {
   // const handleClear = () => {};
 
   return (
-    <div className="px-4 py-6">
+    <div className=" py-10 sm:px-[30px] md:px-[50px] xl:px-[70px]  ">
       <h2 className="mb-6 text-center text-xl font-semibold md:text-2xl  lg:text-4xl">
         Ready to order? Let's go!
       </h2>
